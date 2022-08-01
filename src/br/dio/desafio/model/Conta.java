@@ -1,4 +1,9 @@
+package br.dio.desafio.model;
 
+import br.dio.desafio.view.IConta;
+import lombok.Data;
+
+@Data
 public abstract class Conta implements IConta {
 	
 	private static final int AGENCIA_PADRAO = 1;
@@ -29,18 +34,6 @@ public abstract class Conta implements IConta {
 	public void transferir(double valor, IConta contaDestino) {
 		this.sacar(valor);
 		contaDestino.depositar(valor);
-	}
-
-	public int getAgencia() {
-		return agencia;
-	}
-
-	public int getNumero() {
-		return numero;
-	}
-
-	public double getSaldo() {
-		return saldo;
 	}
 
 	protected void imprimirInfosComuns() {

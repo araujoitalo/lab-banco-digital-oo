@@ -1,3 +1,4 @@
+package br.dio.desafio.model;
 
 public class Cliente {
 

@@ -1,3 +1,7 @@
+import br.dio.desafio.model.Cliente;
+import br.dio.desafio.model.Conta;
+import br.dio.desafio.model.ContaCorrente;
+import br.dio.desafio.model.ContaPoupanca;
 
 public class Main {
 
