@@ -20,4 +20,5 @@ Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é ca
 Abaixo seguem modificações feitas em relação ao projeto base:
 * Foi criada as classes `ClientePessoaFisca e ClientePessoaJuridica` visto que um banco pode ter mais de um tipo de clinte;
 * Foi criado os metodos para que cada tipo de cliente tenha suas operações separadas;
+* Foi adicionado a biblioteca Lombok para melhorar a produtividade e redução de código;
 * Mudanças na classe `Main` para adaptar as mudanças realizadas.
