@@ -20,6 +20,6 @@ Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é ca
 ### Alterações
 
 Abaixo seguem modificações feitas em relação ao projeto base:
-* Foi criada as classes `ClientePessoaFisca e CleintePessoaJuridixa` visto que um banco pode ter mais de um tipo de clinte;
+* Foi criada as classes `ClientePessoaFisca e ClientePessoaJuridica` visto que um banco pode ter mais de um tipo de clinte;
 * Foi criado os metodos para que cada tipo de cliente tenha suas operações separadas;
 * Mudanças na classe `Main` para adaptar as mudanças realizadas.
