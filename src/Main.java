@@ -19,16 +19,19 @@ public class Main {
 		iga.setBairro("Centro");
 		iga.setTelefone("3438215689");
 		
-		Conta cc = new ContaCorrente(italo);
-		Conta poupanca = new ContaPoupanca(italo);
+		ContaCorrente ccf = new ContaCorrente(italo);
+		ContaPoupanca poupancaf = new ContaPoupanca(italo);
+		ccf.depositar(1000);
+		ccf.transferir(500, poupancaf);
+		ccf.imprimirExtratoPF();
+		poupancaf.imprimirExtratoPF();
 
-
-		cc.depositar(1000);
-		cc.transferir(1000, poupanca);
-
-
-		cc.imprimirExtrato();
-		poupanca.imprimirExtrato();
+		ContaCorrente ccj = new ContaCorrente(iga);
+		ContaPoupanca poupancaj = new ContaPoupanca(iga);
+		ccj.depositar(450000);
+		ccj.transferir(350000, poupancaj);
+		ccj.imprimirExtratoPJ();
+		poupancaj.imprimirExtratoPJ();
 
 
 

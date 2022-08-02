@@ -2,13 +2,23 @@ package br.dio.desafio.model;
 
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(Cliente cliente) {
-		super(cliente);
+	public ContaPoupanca(ClientePessoaJuridica clientej) {
+		super(clientej);
+	}
+	public ContaPoupanca(ClientePessoaFisica clientef) {
+		super(clientef);
 	}
 
 	@Override
-	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupan?a ===");
-		super.imprimirInfosComuns();
+	public void imprimirExtratoPJ() {
+		System.out.println("=== Extrato Conta Poupança PJ===");
+		super.imprimirInfosComunsPJ();
 	}
+
+	public void imprimirExtratoPF() {
+		System.out.println("=== Extrato Conta Poupança PF ===");
+		super.imprimirInfosComunsPF();
+	}
+
+
 }
